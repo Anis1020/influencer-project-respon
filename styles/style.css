@@ -111,16 +111,27 @@ nav ul li a{
 /* popular collection ends here here */
 
 /* last section start here */
-.last-section{
 
-}
 .last-banner{
  display: flex;
  justify-content: center;
  align-items: center;
  padding-left: 190px;
+ margin: 50px 0px;
 }
 
+/* footer section start here */
+footer{
+    text-align: center;
+    padding: 30px 0px;
+    background-color: rgb(194, 40, 40);
+}
+.social-icon i{
+    border: 3px solid white;
+    border-radius: 20px;
+    padding: 5px;
+    
+}
 
 
 /* media quary start here */
@@ -137,7 +148,7 @@ nav ul li a{
         font-size: 1.30rem;
     }
     /* banner section start here */
-    .header-banner{
+    .header-banner, {
         flex-direction: column-reverse;
     }
     .banner-text{
@@ -162,6 +173,9 @@ nav ul li a{
       .popular-collection{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+      }
+      .last-banner{
+        flex-direction: column;
       }
       
 }
