@@ -3,17 +3,30 @@
     padding: 0px;
     box-sizing: border-box;
 }
-
-
-
+header{
+  
+    background-color: lightblue;
+    padding-top: 30px;
+}
+.btn-primary{
+    background-color: tomato;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.btn-primary:hover{
+    background-color: azure;
+}
 
 /* navbar style Start here */
+
 .menu-bar{
-     background-color: lightblue;
+    
      display: flex;
      justify-content: space-between;
      align-items: center;
-     height: 100px;
+     
      padding: 0px 50px;
 }
 nav{
@@ -32,11 +45,62 @@ nav ul li{
 nav ul li a{
     text-decoration: none;
     color: black;
-    
-    
+ 
 }
 /* navbar style end here */
+/* banner section start here */
+.header-banner{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 50px;
+}
+.banner-text{
+   width: 50%;
+   
+}
+.banner-text > h1, p, button{
+    margin-bottom: 15px;
+}
+.banner-img{
+  width: 50%;
+  margin-top: 40px;
+}
+/* banner section ends here */
+/* brand section style start here */
+  .brand-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+  }
+  .alibaba{
+    padding: 30px;
+  }
 
+/* brand section style ends here */
+/* popular collection start here */
+.sec > h1{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.popular-collection{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    gap: 30px;
+    padding-left: 270px;
+    
+}
+.popular-item{
+   display: flex;
+   flex-direction: column;
+}
+/* popular collection ends here here */
 
 
 
@@ -45,7 +109,38 @@ nav ul li a{
 /* media quary start here */
 @media screen and (max-width:577px){
     
-    .menu-nav{
-        background-color: green;
+    .menu-bar{
+       
+        flex-direction: column;
+        padding: 20px 0px;
     }
+    nav ul li{
+        display: block;
+        padding: 10px 0px;
+        font-size: 1.30rem;
+    }
+    /* banner section start here */
+    .header-banner{
+        flex-direction: column-reverse;
+    }
+    .banner-text{
+        width: 100%;
+        padding-left: 30px;
+     }
+    .banner-img{
+        width: 100%;
+        margin-top: 40px;
+      }
+      /* brand section style start here */
+      .brand-section{
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
+       justify-content: center;
+       align-items: center;
+       padding-left: 50px;
+      }
+      /* popular collection here */
+      .popular-item{
+        flex-direction: column;
+      }
 }
