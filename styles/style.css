@@ -69,16 +69,10 @@ nav ul li a{
 }
 /* banner section ends here */
 /* brand section style start here */
-  .brand-section{
+---------------------------
+.brand-section{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 30px;
-  }
-  .alibaba{
-    padding: 30px;
-  }
+}
 
 /* brand section style ends here */
 /* popular collection start here */
@@ -132,15 +126,19 @@ nav ul li a{
         margin-top: 40px;
       }
       /* brand section style start here */
-      .brand-section{
+      -------------------------------
+      /* .brand-section{
        display: grid;
        grid-template-columns: repeat(2, 1fr);
        justify-content: center;
        align-items: center;
        padding-left: 50px;
-      }
+      } */
+      ----------------------------
       /* popular collection here */
-      .popular-item{
-        flex-direction: column;
+      .popular-collection{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
       }
+      
 }
