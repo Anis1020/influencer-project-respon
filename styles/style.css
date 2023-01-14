@@ -69,11 +69,18 @@ nav ul li a{
 }
 /* banner section ends here */
 /* brand section style start here */
----------------------------
+
 .brand-section{
     display: flex;
+    justify-content: center;
+    align-items: center;
+   gap: 55px;
+   padding: 20px 0px;
 }
-
+.alibaba{
+    align-items: center;
+    padding: 20px 0px;
+}
 /* brand section style ends here */
 /* popular collection start here */
 .sec > h1{
@@ -94,9 +101,22 @@ nav ul li a{
    display: flex;
    flex-direction: column;
 }
+.see-more {
+   display: flex;
+   justify-content: flex-end;
+   padding-right: 200px;
+   gap: 10px;
+   color: red;
+}
 /* popular collection ends here here */
 
+/* last section start here */
+.last-section{
+    
+}
+.last-banner{
 
+}
 
 
 
@@ -126,15 +146,15 @@ nav ul li a{
         margin-top: 40px;
       }
       /* brand section style start here */
-      -------------------------------
-      /* .brand-section{
+      
+      .brand-section{
        display: grid;
        grid-template-columns: repeat(2, 1fr);
        justify-content: center;
        align-items: center;
        padding-left: 50px;
-      } */
-      ----------------------------
+      }
+     
       /* popular collection here */
       .popular-collection{
         display: grid;
